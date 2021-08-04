@@ -3,6 +3,7 @@
     <h1>{{ msg }}</h1>
     <div v-for="product in products" :key="product.id">
        {{product.name}} 
+       <img v-bind:src="product.image">
     </div>
 
   </div>
@@ -10,7 +11,7 @@
 
 <script>
 export default {
-  name: "ProductList",
+  name: "ProductCard",
   props: {
     msg: String,
   },

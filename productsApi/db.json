@@ -1,45 +1,94 @@
 {
   "products": [
     {
+      "id": 1,
       "name": "Hipster Ultimate",
       "price": 50,
-      "image": "https://images.vans.com/is/image/VansEU/VN0A38G1PHN-HERO?$PLP-IMAGE$"
+      "image": "https://images.vans.com/is/image/VansEU/VN0A38G1PHN-HERO?$PLP-IMAGE$",
+      "category": [
+        "shoes",
+        "vans",
+        "cheap"
+      ]
     },
     {
+      "id": 2,
       "name": "On Motion Live",
       "price": 99,
-      "image": "https://images.vans.com/is/image/VansEU/VN0A3WKT4RQ-HERO?$PLP-IMAGE$"
+      "image": "https://images.vans.com/is/image/VansEU/VN0A3WKT4RQ-HERO?$PLP-IMAGE$",
+      "category": [
+        "shoes",
+        "vans",
+        "cheap"
+      ]
     },
     {
+      "id": 3,
       "name": "Underground Max",
       "price": 90,
-      "image": "https://images.vans.com/is/image/VansEU/VN0A4UHZV3M-HERO?$PLP-IMAGE$"
+      "image": "https://images.vans.com/is/image/VansEU/VN0A4UHZV3M-HERO?$PLP-IMAGE$",
+      "category": [
+        "vans",
+        "cheap"
+      ]
     },
     {
+      "id": 4,
       "name": "Ultimate Model",
       "price": 75,
-      "image": "https://images.vans.com/is/image/VansEU/VN0A54F3U8Q-HERO?$PLP-IMAGE$"
+      "image": "https://images.vans.com/is/image/VansEU/VN0A54F3U8Q-HERO?$PLP-IMAGE$",
+      "category": [
+        "vans",
+        "cheap"
+      ]
     },
     {
+      "id": 5,
       "name": "Grand Old",
       "price": 75,
-      "image": "https://images.vans.com/is/image/VansEU/VN0A3WMAVNG-HERO?$PLP-IMAGE$"
+      "image": "https://images.vans.com/is/image/VansEU/VN0A3WMAVNG-HERO?$PLP-IMAGE$",
+      "category": [
+        "vans",
+        "cheap"
+      ]
     },
     {
+      "id": 6,
       "name": "Pro Skate",
       "price": 75,
-      "image": "https://images.vans.com/is/image/VansEU/VN0A3WKT4PF-HERO?$PLP-IMAGE$"
+      "image": "https://images.vans.com/is/image/VansEU/VN0A3WKT4PF-HERO?$PLP-IMAGE$",
+      "category": [
+        "vans",
+        "cheap"
+      ]
     },
     {
+      "id": 7,
       "name": "Summer edition",
       "price": 75,
-      "image": "https://images.vans.com/is/image/VansEU/VN0A3WKT4R2-HERO?$PLP-IMAGE$"
+      "image": "https://images.vans.com/is/image/VansEU/VN0A3WKT4R2-HERO?$PLP-IMAGE$",
+      "category": [
+        "shoes",
+        "vans",
+        "cheap"
+      ]
     },
     {
+      "id": 8,
       "name": "Winter VAN",
       "price": 75,
-      "image": "https://images.vans.com/is/image/VansEU/VN0A3MVD4Y5-HERO?$PLP-IMAGE$"
+      "image": "https://images.vans.com/is/image/VansEU/VN0A3MVD4Y5-HERO?$PLP-IMAGE$",
+      "category": [
+        "shoes",
+        "vans",
+        "cheap"
+      ]
     }
   ],
-  "cart": []
+  "cart": [],
+  "whislist": [
+    {
+      "id": 1
+    }
+  ]
 }
