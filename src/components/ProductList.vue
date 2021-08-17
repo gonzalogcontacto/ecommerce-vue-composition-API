@@ -12,9 +12,10 @@
 
 <script>
 
-import { computed, onMounted, ref, watch } from "vue";
-import { useRoute } from "vue-router";
+import { computed, onMounted, ref/*, watch*/ } from "vue";
+//import { useRoute } from "vue-router";
 import { useWhislist } from '../hooks/whislist';
+import { useProducts } from '../hooks/products';
 import Filters from "@/components/Filters.vue";
 
 export default {
@@ -27,25 +28,14 @@ export default {
       Mejoramos la testeabilidad del componente, por contra somos más verbosos.
     */
     //const store = useStore() // para acceder al store, getters etc
-    const route = useRoute() // para acceder al router, parámetros URL etc
+   // const route = useRoute() // para acceder al router, parámetros URL etc
     const { addProductToWhislist } = useWhislist()
+    const { getProducts } = useProducts()
 
     const products = ref([]) // Reactivo explicitamente
     const filters = ref([]) // Reactivo explicitamente
     const searchQuery = ref("") // Reactivo explicitamente
     
-    const getProducts = async () => {
-      try{
-        const productsFetched = await fetch("http://localhost:3000/products");
-        let res = await productsFetched.json();
-        console.log(res)
-        products.value = res;
-        
-      } catch(e){
-        console.log(e)
-      }
-    }
-
     const handlerFilter = (newFilters) => {
         filters.value = newFilters
     }
@@ -92,12 +82,19 @@ export default {
       }
     }
 
-    onMounted(() => { 
-      getProducts()
+    onMounted(async() => { 
+      try{
+        const productsFetched = await getProducts()
+        products.value = productsFetched.data
+      } catch(error){
+        console.log(error)
+        products.value = null
+      }
+        
     })
 
     // Que cosas observo su cambio y que efecto lanzo cuando esto cambie
-    watch(() => route.query, getProducts)
+    //watch(() => route.query, getProducts)
 
     // Exponemos lo que queremos al template y además no todo tiene por que ser reactivo
     return {

@@ -10,7 +10,7 @@ export function useWhislist() {
     }
 
     onMounted(() => {
-        console.log('Mixin Injected')
+        console.log('Whislist hook Injected')
     })
 
     return {
