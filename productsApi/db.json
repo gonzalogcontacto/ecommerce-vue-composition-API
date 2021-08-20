@@ -85,13 +85,87 @@
       ]
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "id": 3,
+      "name": "Underground Max",
+      "price": 90,
+      "image": "https://images.vans.com/is/image/VansEU/VN0A4UHZV3M-HERO?$PLP-IMAGE$",
+      "category": [
+        "vans",
+        "cheap"
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Hipster Ultimate",
+      "price": 50,
+      "image": "https://images.vans.com/is/image/VansEU/VN0A38G1PHN-HERO?$PLP-IMAGE$",
+      "category": [
+        "shoes",
+        "vans",
+        "cheap"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "On Motion Live",
+      "price": 99,
+      "image": "https://images.vans.com/is/image/VansEU/VN0A3WKT4RQ-HERO?$PLP-IMAGE$",
+      "category": [
+        "shoes",
+        "vans",
+        "cheap"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Ultimate Model",
+      "price": 75,
+      "image": "https://images.vans.com/is/image/VansEU/VN0A54F3U8Q-HERO?$PLP-IMAGE$",
+      "category": [
+        "vans",
+        "cheap"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Grand Old",
+      "price": 75,
+      "image": "https://images.vans.com/is/image/VansEU/VN0A3WMAVNG-HERO?$PLP-IMAGE$",
+      "category": [
+        "vans",
+        "cheap"
+      ]
+    }
+  ],
   "whislist": [
     {
       "id": 1
     },
     {
       "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
     }
   ]
 }
