@@ -21,7 +21,7 @@ jest.mock('axios', () => {
 describe('Can consume a list of', () =>{
     test('available products', async () => {
 
-        render(<ProductList/>)
+        render(ProductList)
 
         // Esperamos a las actualizaciones del DOM
         await flushPromises()
