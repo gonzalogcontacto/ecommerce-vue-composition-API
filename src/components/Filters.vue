@@ -14,14 +14,16 @@
         </label>
       </li>
     </ul>
-    <label for="search" class="sr-only">Buscar</label>
-    <input
-      id="search"
-      type="search"
-      placeholder="Buscar…"
-      class="search"
-      @input="handleSearch"
-    />
+    <div class="search-bar">
+      <label for="search" class="sr-only">Buscar</label>
+      <input
+        id="search"
+        type="search"
+        placeholder="Buscar…"
+        class="search"
+        @input="handleSearch"
+      />
+    </div>
   </section>
 </template>
 
@@ -62,7 +64,7 @@ export default {
 .filters-tags {
   display: flex;
   flex-grow: 1;
-  margin: 0 auto 0 -0.5rem;
+  margin: 0 auto 0 2.5rem;
   padding: 0.5rem;
   overflow: auto;
   column-gap: 0.2rem;
@@ -104,5 +106,8 @@ export default {
 .search:focus {
   border: 1px solid var(--primary-color);
   outline: 2px solid var(--primary-color);
+}
+.search-bar {
+  margin-left: 3em;
 }
 </style>
