@@ -25,8 +25,7 @@
   </section>
 </template>
 
-<script lang="ts">
-
+<script>
 export default {
   data() {
     return {
@@ -37,7 +36,7 @@ export default {
           label: "Zapatillas",
         },
         { value: "cheap", label: "Económicas" },
-        { value: "vans", label: "VANS" }
+        { value: "vans", label: "VANS" },
       ],
     };
   },
